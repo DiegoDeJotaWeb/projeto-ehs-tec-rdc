@@ -1,0 +1,52 @@
+{
+    "equipamentos": [
+      {
+        "codigo": "EQP001",
+        "modelo": "Modelo A",
+        "serie": "123456",
+        "tipo": "Equipamento de Teste",
+        "fabricante": "ABC Company",
+        "capacidade": {
+          "minima": "10 unidades",
+          "maxima": "100 unidades"
+        },
+        "escala": "Local",
+        "localizacao": "Sala 1",
+        "situacao": "ativo",
+        "imagem": "img/equipamentos/equipamento-1.png"
+      },
+      {
+        "codigo": "EQP002",
+        "modelo": "Modelo B",
+        "serie": "789012",
+        "tipo": "Equipamento de Medição",
+        "fabricante": "XYZ Corp",
+        "capacidade": {
+          "minima": "5 kg",
+          "maxima": "50 kg"
+        },
+        "escala": "Local",
+        "localizacao": "Sala 2",
+        "situacao": "ativo",
+        "imagem": "img/equipamentos/equipamento-2.png"
+      },
+      {
+        "codigo": "EQP003",
+        "modelo": "Modelo C",
+        "serie": "345678",
+        "tipo": "Equipamento de Produção",
+        "fabricante": "123 Manufacturing",
+        "capacidade": {
+          "minima": "100 peças/hora",
+          "maxima": "500 peças/hora"
+        },
+        "escala": "Local",
+        "localizacao": "Sala 3",
+        "situacao": "desativo",
+        "imagem": "img/equipamentos/equipamento-3.png"
+      }
+    ]
+  }
+
+
+ 

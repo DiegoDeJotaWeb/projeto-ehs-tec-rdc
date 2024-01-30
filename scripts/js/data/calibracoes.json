@@ -1,0 +1,55 @@
+{
+    "calibracoes": [
+      {
+        "codigo_equipamento": "EQP001",
+        "laboratorio": "LabCalibra",
+        "certificado": "CAL123",
+        "norma": "ISO 9001:2015",
+        "data_calibracao": "2024-01-15",
+        "prazo_calibracao": "12 meses",
+        "proxima_calibracao": "2025-01-15",
+        "link_certificado": "certificados/certificado-EQP001.pdf"
+      },
+      {
+        "codigo_equipamento": "EQP002",
+        "laboratorio": "MetroLab",
+        "certificado": "CAL456",
+        "norma": "ISO 17025:2017",
+        "data_calibracao": "2024-02-20",
+        "prazo_calibracao": "18 meses",
+        "proxima_calibracao": "2025-08-20",
+        "link_certificado": "certificados/certificado-EQP002.pdf"
+      },
+      {
+        "codigo_equipamento": "EQP002",
+        "laboratorio": "MetroLab2",
+        "certificado": "CAL4562",
+        "norma": "ISO 17025:2017",
+        "data_calibracao": "2024-02-22",
+        "prazo_calibracao": "18 meses",
+        "proxima_calibracao": "2025-08-22",
+        "link_certificado": "certificados/certificado-EQP002-2.pdf"
+      },
+      {
+        "codigo_equipamento": "EQP002",
+        "laboratorio": "MetroLab3",
+        "certificado": "CAL4563",
+        "norma": "ISO 17025:2017",
+        "data_calibracao": "2024-02-23",
+        "prazo_calibracao": "18 meses",
+        "proxima_calibracao": "2025-08-23",
+        "link_certificado": "certificados/certificado-EQP002-3.pdf"
+      },
+      {
+        "codigo_equipamento": "EQP003",
+        "laboratorio": "TechCal",
+        "certificado": "CAL789",
+        "norma": "ANSI/NCSL Z540-1",
+        "data_calibracao": "2024-03-10",
+        "prazo_calibracao": "24 meses",
+        "proxima_calibracao": "2026-03-10",
+        "link_certificado": "certificados/certificado-EQP003.pdf"
+      }
+    ]
+  }
+  
