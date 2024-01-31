@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
+
 <body>
 
     <header class="header">
@@ -35,34 +36,34 @@
                     <div class="flex-column">
                         <div class="container-input">
                             <label for="codigo">Código</label>
-                            <input texto="text" name="codigo" id="codigo">
+                            <input texto="text" name="codigo" id="codigo" disabled>
                         </div>
                         <div class="container-input">
                             <label for="modelo">Modelo</label>
-                            <input texto="text" name="modelo" id="modelo">
+                            <input texto="text" name="modelo" id="modelo" disabled>
                         </div>
 
                         <div class="container-input">
                             <label for="serie">Serie</label>
-                            <input texto="text" name="serie" id="serie">
+                            <input texto="text" name="serie" id="serie" disabled>
                         </div>
 
                         <div class="container-input">
                             <label for="tipo">Tipo</label>
-                            <input texto="text" name="tipo" id="tipo">
+                            <input texto="text" name="tipo" id="tipo" disabled>
                         </div>
 
                         <div class="container-input">
                             <label for="fabricante">Fabricante</label>
-                            <input texto="text" name="fabricante" id="fabricante">
+                            <input texto="text" name="fabricante" id="fabricante" disabled>
                         </div>
 
                         <div class="container-input">
                             <label for="">Capacidade</label>
                             <label for="cap-min" class="label-cap">Min</label>
-                            <input texto="text" name="cap-min" id="cap-min">
+                            <input texto="text" name="cap-min" id="cap-min" disabled>
                             <label for="cap-max" class="label-cap">Max</label>
-                            <input texto="text" name="cap-max" id="cap-max">
+                            <input texto="text" name="cap-max" id="cap-max" disabled>
                         </div>
                     </div>
                     <div class="box-img">
@@ -72,14 +73,14 @@
 
                 <div class="container-input">
                     <label for="escala">Escala</label>
-                    <input texto="text" name="escala" id="escala">
+                    <input texto="text" name="escala" id="escala" disabled>
                     <label for="localizacao">Localização</label>
-                    <input texto="text" name="localizacao" id="localizacao">
+                    <input texto="text" name="localizacao" id="localizacao" disabled>
                 </div>
 
                 <div class="container-input">
                     <label for="situacao">Situação:</label>
-                    <input texto="text" name="situacao" id="situacao">
+                    <input texto="text" name="situacao" id="situacao" disabled>
                 </div>
 
             </div>
