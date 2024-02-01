@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipamentos</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -20,76 +19,78 @@
     </header>
 
     <main class="conteudo">
+
         <h1 class="title">Consulta equipamento</h1>
-        <div class="filtro">
-            <form action="" class="flex">
-                <label for="selectEquipamentos" class="filtro__inputLabel">Equipamento</label>
-                <select name="" id="selectEquipamentos" class="filtro__inputContainer">
-                    <option value="">Selecione um equipamento</option>
-                </select>
-            </form>
-        </div>
 
-        <div class="form-eqpt ">
-            <div class="flex-column">
-                <div class="flex-wrap-reverse">
-                    <div class="flex-column">
-                        <div class="container-input">
-                            <label for="codigo">Código</label>
-                            <input texto="text" name="codigo" id="codigo" disabled>
-                        </div>
-                        <div class="container-input">
-                            <label for="modelo">Modelo</label>
-                            <input texto="text" name="modelo" id="modelo" disabled>
-                        </div>
+        <form class="filtro">
+            <label for="selectEquipamentos">Equipamento</label>
+            <select name="" id="selectEquipamentos" class="filtro__inputContainer">
+                <option value="">Selecione um equipamento</option>
+            </select>
+        </form>
 
-                        <div class="container-input">
-                            <label for="serie">Serie</label>
-                            <input texto="text" name="serie" id="serie" disabled>
-                        </div>
 
-                        <div class="container-input">
-                            <label for="tipo">Tipo</label>
-                            <input texto="text" name="tipo" id="tipo" disabled>
-                        </div>
+        <div class="container">
 
-                        <div class="container-input">
-                            <label for="fabricante">Fabricante</label>
-                            <input texto="text" name="fabricante" id="fabricante" disabled>
-                        </div>
 
-                        <div class="container-input">
-                            <label for="">Capacidade</label>
-                            <label for="cap-min" class="label-cap">Min</label>
-                            <input texto="text" name="cap-min" id="cap-min" disabled>
-                            <label for="cap-max" class="label-cap">Max</label>
-                            <input texto="text" name="cap-max" id="cap-max" disabled>
-                        </div>
+            <div class="row form-eqpt">
+                <div class="col col-9">
+                    <div class="row">
+                        <div class="col col-2 "><label for="codigo">Codigo</label></div>
+                        <div class="col col-2"> <input type="text" name="codigo" id="codigo"></div>
                     </div>
-                    <div class="box-img">
-                        <img src="img/equipamentos/equipamento.png" alt="" id="image">
+                    <div class="row">
+                        <div class="col col-2"><label for="modelo">modelo</label></div>
+                        <div class="col col-6"> <input type="text" name="modelo" id="modelo"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-2"><label for="serie">Serie</label></div>
+                        <div class="col col-2"> <input type="text" name="serie" id="serie"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-2"><label for="tipo">Tipo</label></div>
+                        <div class="col col-1"> <input type="text" name="" id=""></div>
+                        <div class="col col-4"> <input type="text" name="tipo" id="tipo"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-2"><label for="">Fabricante</label></div>
+                        <div class="col col-10"> <input type="text" name="fabricante" id="fabricante" disabled></div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-2"><label for="">Capacidades</label></div>
+                        <div class="col col-1"><label for="cap-min">Mín</label></div>
+                        <div class="col col-4"> <input type="text" name="cap-min" id="cap-min"></div>
+                        <div class="col col-1"><label for="cap-max">Máx</label></div>
+                        <div class="col col-4"> <input type="text" name="cap-max" id="cap-max"></div>
                     </div>
                 </div>
-
-                <div class="container-input">
-                    <label for="escala">Escala</label>
-                    <input texto="text" name="escala" id="escala" disabled>
-                    <label for="localizacao">Localização</label>
-                    <input texto="text" name="localizacao" id="localizacao" disabled>
+                <div class="col col-3">
+                    <img src="img/equipamentos/equipamento.png" alt="" id="image">
                 </div>
+            </div>
 
-                <div class="container-input">
-                    <label for="situacao">Situação:</label>
-                    <input texto="text" name="situacao" id="situacao" disabled>
+            <div class="row form-eqpt">
+                <div class="col col-9">
+                    <div class="row">
+                        <div class="col col-2"><label for="escala">Escala</label></div>
+                        <div class="col col-2"><input type="text" name="escala" id="escala"></div>
+                        <div class="col col-2 "><label for="localizacao">Lacalização</label></div>
+                        <div class="col col-1"> <input type="text" name="" id=""></div>
+                        <div class="col col-5"> <input type="text" name="localizacao" id="localizacao"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-2"><label for="situacao">Situação</label></div>
+                        <div class="col col-2"> <input type="text" name="situacao" id="situacao"></div>
+                    </div>
                 </div>
 
             </div>
-        </div>
 
-        <div class="flex-end " id="detalhesEquipamento">
-            <button class="btn__secondary " id="verCalibracoesBtn">Calibar</button>
-            <button class="btn__secondary ">Limpar</button>
-            <button class="btn__secondary ">Cancelar</button>
+            <div class="flex-end" id="detalhesEquipamento">
+                <button class="btn" id="verCalibracoesBtn">Calibar</button>
+                <button class="btn" id="limparDetalhesEquipamentoBtn">Limpar</button>
+                <button class="btn">Cancelar</button>
+            </div>
         </div>
 
     </main>

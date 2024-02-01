@@ -3,25 +3,25 @@ function carregarEquipamentos() {
         url: 'vendor/equipamentos.php',
         type: 'GET',
         dataType: 'json',
-        success: function(data) {
+        success: function (data) {
             $('#selectEquipamentos').empty();
 
             $('#selectEquipamentos').append('<option value="">Selecione...</option>');
 
-            $.each(data.equipamentos, function(index, equipamento) {
+            $.each(data.equipamentos, function (index, equipamento) {
                 $('#selectEquipamentos').append('<option value="' + equipamento.codigo + '">' + equipamento.codigo + '</option>');
             });
         },
-        error: function(xhr, status, error) {
+        error: function (xhr, status, error) {
             console.error("Erro ao carregar os equipamentos:", status, error);
         }
     });
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     carregarEquipamentos();
 
-    $('#selectEquipamentos').change(function() {
+    $('#selectEquipamentos').change(function () {
         var codigoSelecionado = $(this).val();
         if (codigoSelecionado !== "") {
             exibirDetalhesEquipamento(codigoSelecionado);
@@ -30,8 +30,8 @@ $(document).ready(function() {
         }
     });
 
-    $('#detalhesEquipamento').on('click', '#verCalibracoesBtn', function() {
-        console.log('teste');
+    $('#detalhesEquipamento').on('click', '#verCalibracoesBtn', function () {
+
         var codigoEquipamento = $('#selectEquipamentos').val();
         if (codigoEquipamento !== "") {
             window.location.href = 'calibracoes.php?codigoEquipamento=' + codigoEquipamento;
@@ -44,8 +44,8 @@ function exibirDetalhesEquipamento(codigoEquipamento) {
         url: 'vendor/equipamentos.php',
         type: 'GET',
         dataType: 'json',
-        success: function(data) {
-            var equipamentoSelecionado = data.equipamentos.find(function(equipamento) {
+        success: function (data) {
+            var equipamentoSelecionado = data.equipamentos.find(function (equipamento) {
                 return equipamento.codigo === codigoEquipamento;
             });
 
@@ -61,8 +61,26 @@ function exibirDetalhesEquipamento(codigoEquipamento) {
             $('#situacao').val(equipamentoSelecionado.situacao);
             $("#image").attr("src", equipamentoSelecionado.imagem);
         },
-        error: function(xhr, status, error) {
+        error: function (xhr, status, error) {
             console.error("Erro ao carregar os detalhes do equipamento:", status, error);
         }
     });
 }
+
+
+// limpar dados
+
+$("#limparDetalhesEquipamentoBtn").click(function () {
+    $('#codigo').val('');
+    $('#modelo').val('');
+    $('#serie').val('');
+    $('#tipo').val('');
+    $('#fabricante').val('');
+    $('#cap-min').val('');
+    $('#cap-max').val('');
+    $('#escala').val('');
+    $('#localizacao').val('');
+    $('#situacao').val('');
+    $('#image').attr("src", 'img/equipamentos/equipamento.png');
+    $('#selectEquipamentos').val('');
+});
